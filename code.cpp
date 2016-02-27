@@ -8,19 +8,19 @@ int main(void)
   double side, radius, area;
 
   printf("Please, choose a figure: square(S) or circle(C)\n");
-  scanf("%c", &figure);
+  scanf_s("%c", &figure);
 
   if (figure == 'S') {
 
     printf("Please enter the lenth of a square side.\n");
-    scanf("%lf", &side);
+    scanf_s("%lf", &side);
     area = pow(side, 2);
     printf("The area of square is %.3f", area);
 
   } else if (figure == 'C') {
 
     printf("Please enter the radius of a circle.\n");
-    scanf("%lf", &radius);
+    scanf_s("%lf", &radius);
     area = PI * pow(radius, 2);
     printf("The area of circle is %.3f", area);
 
@@ -30,6 +30,7 @@ int main(void)
 
   }
 
+  getchar();
   getchar();
   return 0;
 
